@@ -5,6 +5,13 @@
   text-align: center;
 }
 
+h1 {
+  color: #fbbf24;
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
