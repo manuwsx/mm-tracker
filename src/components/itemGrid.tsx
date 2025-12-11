@@ -6,7 +6,6 @@ export const ItemGrid = () => {
 
   const getItemImageUrl = (iconFileName: string) => {
     try {
-      // Fixed the path to match your folder structure
       return new URL(`../assets/items/${iconFileName}`, import.meta.url).href;
     } catch {
       return null;
@@ -20,7 +19,7 @@ export const ItemGrid = () => {
       </h2>
       <div style={{ 
         display: 'grid', 
-        gridTemplateColumns: 'repeat(6, 1fr)',
+        gridTemplateColumns: 'repeat(5, 1fr)',
         gap: '10px' 
       }}>
         {items.filter(item => item.category === categoryFilter).map((item) => {
